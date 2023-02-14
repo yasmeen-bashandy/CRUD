@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500&family=Alegreya:wght@400;600&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap file-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- media file-->
+    <link rel="stylesheet" href="./css/media.css">
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Product Management System</title>
+</head>
+<body>
+    <div class="container">
+        <div class="w-50 mx-auto mt-5">
+            <h1>Product Management System</h1>
+            <div class="form-group mb-2">
+                <label for="ProductName">ProductName</label>
+                <input type="text" id="ProductName" class="form-control">
+            </div>
+            <div class="form-group mb-2">
+                <label for="ProductPrice">ProductPrice</label>
+                <input type="number" id="ProductPrice" class="form-control">
+            </div>
+            <div class="form-group mb-2">
+                <label for="ProductModel">ProductModel</label>
+                <input type="text" id="ProductModel" class="form-control">
+            </div>
+            <div class="form-group mb-2">
+                <label for="ProductDec">ProductDec</label>
+                <textarea name="ProductDec" id="ProductDec" class="form-control">
+                </textarea>
+            </div>
+            <button onclick="addProduct()" class="btn btn-primary mt-2">Add Product</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="w-75 mx-auto py-lg-5">
+            <table class="table text-center mx-auto text-white">
+                <thead>
+                    <th>Index</th>
+                    <th>ProductName</th>
+                    <th>ProductPrice</th>
+                    <th>ProductModel</th>
+                    <th>ProductDec</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tBody">
+                </tbody>
+        </table>
+
+        </div>
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
